@@ -27,8 +27,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <button onClick={fetchDog} disabled={loading}>
+    <div className="app">
+      <button className="btn" onClick={fetchDog} disabled={loading}>
         Fetch Dog
       </button>
       {data && (
@@ -36,7 +36,7 @@ function App() {
           <img src={data} alt="random dog"></img>
         </div>
       )}
-      ;{error && <p>{error}</p>}
+      {error && <p>{error}</p>}
     </div>
   );
 }
